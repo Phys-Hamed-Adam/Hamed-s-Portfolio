@@ -5,12 +5,75 @@ import '@fortawesome/fontawesome-free/css/all.min.css'
 
 import imgHamed from './Hamed_President.jpg'
 
+import imgLRS1 from './assets/Pictures/LRS/intro event.JPG'
+import imgLRS2 from './assets/Pictures/LRS/LRS 3.JPG'
+import imgLRS3 from './assets/Pictures/LRS/LRS 4.JPG'
+import imgLRS4 from './assets/Pictures/LRS/LRS 9.jpg'
+import imgLRS5 from './assets/Pictures/LRS/LRS 10.jpg'
+import imgLRS6 from './assets/Pictures/LRS/LRS 11.jpg'
+import imgLRS7 from './assets/Pictures/LRS/LRS 12.jpg'
+import imgLRS8 from './assets/Pictures/LRS/LRS 14.jpg'
+
+import imgTEDX1 from './assets/TEDX/TEDX 1.jpg'
+import imgTEDX2 from './assets/TEDX/TEDX 2.jpg'
+import imgTEDX3 from './assets/TEDX/TEDX 3.jpg'
+import imgTEDX4 from './assets/TEDX/TEDX 4.jpg'
+import imgTEDX5 from './assets/TEDX/TEDX 5.jpeg'
+
+import imgHack1 from './assets/Pictures/LEFS Hackathon/Hackathon 1.png'
+import imgHack2 from './assets/Pictures/LEFS Hackathon/Hackathon 2.png'
+import imgHack4 from './assets/Pictures/LEFS Hackathon/Hackathon 4.png'
+import imgHack5 from './assets/Pictures/LEFS Hackathon/Hackathon 5.png'
+import imgHack6 from './assets/Pictures/LEFS Hackathon/Hackathon 6.png'
+import imgHack7 from './assets/Pictures/LEFS Hackathon/Hackathon 7.png'
+import imgHack8 from './assets/Pictures/LEFS Hackathon/Hackathon 8.jpg'
+
+import imgRSS7 from './assets/RSS Hackathon/RSS 7.jpg'
+
 const NAV_LINKS = [
   { label: 'Home', id: 'home' },
   { label: 'About', id: 'about' },
   { label: 'Skills', id: 'skills' },
   { label: 'Projects', id: 'projects' },
+  { label: 'Experiences', id: 'experiences' },
   { label: 'Contact', id: 'contact' },
+]
+
+const EXPERIENCES = [
+
+    {
+    title: 'RSS Hackathon',
+    subtitle: 'Royal Statistical Society Hackathon',
+    description: 'Won second place in the RSS Hackathon where  applying data science and statistical methods to solve real-world analytical challenges.',
+    images: [imgRSS7],
+    icon: 'fa-solid fa-chart-column',
+  },
+
+  {
+    title: 'LRS',
+    subtitle: 'Lancaster Rocketry Society',
+    description: 'Led the rocketry society as President — organising launches, intro events, and workshops to inspire students in aerospace engineering.',
+    images: [imgLRS1, imgLRS2, imgLRS3, imgLRS4, imgLRS5, imgLRS6, imgLRS7, imgLRS8],
+    link: 'https://lancaster-rocketry-society.github.io/Website/',
+    icon: 'fa-solid fa-rocket',
+  },
+  {
+    title: 'Quant Hackathon',
+    subtitle: 'Quantitative Finance Hackathon',
+    description: 'Organised the first Quant Hackathon in lancaster: where participants had to buld the bot with the best strategy eering challenge building innovative prototypes under tight deadlines.',
+    images: [imgHack1, imgHack2, imgHack4, imgHack5, imgHack6, imgHack7, imgHack8],
+    icon: 'fa-solid fa-code',
+  },
+  
+  {
+    title: 'TEDx',
+    subtitle: 'TEDx Lancaster University',
+    description: 'organised the TEDx Lancaster University , bringing thought-provoking speakers from around the uk and diverse speakers to the university community.',
+    images: [imgTEDX1, imgTEDX2, imgTEDX3, imgTEDX4, imgTEDX5],
+    icon: 'fa-solid fa-microphone-lines',
+  },
+
+
 ]
 
 const SKILLS = [
@@ -22,31 +85,35 @@ const SKILLS = [
 
 const PROJECTS = [
   {
-    title: 'Lancaster Rocketry Society Website',
+    title: 'Lancaster Rocketry Society',
     description: 'Designed and built the official website for LRS — a student-led rocketry society. Features event management, team showcase, and a responsive retro space-age design.',
     tech: ['React', 'Vite', 'Firebase', 'CSS'],
-    link: 'https://github.com/Lancaster-Rocketry-Society',
+    link: 'https://lancaster-rocketry-society.github.io/Website/',
     icon: 'fa-solid fa-rocket',
   },
-  {
-    title: 'Portfolio Website',
-    description: 'This very website — a personal portfolio built with React and Vite, featuring smooth animations, responsive design, and a modern dark aesthetic.',
-    tech: ['React', 'Vite', 'CSS3'],
-    icon: 'fa-solid fa-laptop-code',
+
+    {
+    title: 'N Body simulation',
+    description: 'Designed and built the official website for LRS — a student-led rocketry society. Features event management, team showcase, and a responsive retro space-age design.',
+    tech: ['React', 'Vite', 'Firebase', 'CSS'],
+    link: 'https://github.com/Phys-Hamed-Adam/Solar-System',
+    icon: 'fa-solid fa-rocket',
   },
+
+
   {
-    title: 'Rocket Avionics System',
-    description: 'Developed flight computer software for model rockets, including sensor integration, data logging, and telemetry for real-time altitude and trajectory tracking.',
-    tech: ['C++', 'Arduino', 'Python'],
-    icon: 'fa-solid fa-microchip',
+    title: 'Picky',
+    description: 'Collaborated on Picky — an app-based project tackling real-world problems through creative software solutions and user-centred design.',
+    tech: ['React', 'Node.js', 'CSS'],
+    link: 'https://picky-eater-beta.vercel.app/',
+    icon: 'fa-solid fa-mobile-screen-button',
   },
 ]
 
 const SOCIALS = [
   { icon: 'fab fa-github', href: 'https://github.com/hamedadam', label: 'GitHub' },
   { icon: 'fab fa-linkedin-in', href: 'https://www.linkedin.com/in/hamed-adam-66b774331/', label: 'LinkedIn' },
-  { icon: 'fab fa-instagram', href: 'https://www.instagram.com/', label: 'Instagram' },
-  { icon: 'fas fa-envelope', href: 'mailto:hamed@example.com', label: 'Email' },
+  { icon: 'fas fa-envelope', href: 'phys.hamed.adam@gmail.com', label: 'Email' },
 ]
 
 function useScrollSpy(ids, offset = 100) {
@@ -294,13 +361,110 @@ function Projects() {
   )
 }
 
+function Lightbox({ images, index, onClose, onPrev, onNext }) {
+  useEffect(() => {
+    document.body.style.overflow = 'hidden'
+    return () => { document.body.style.overflow = '' }
+  }, [])
+
+  useEffect(() => {
+    const onKey = (e) => {
+      if (e.key === 'Escape') onClose()
+      if (e.key === 'ArrowLeft') onPrev()
+      if (e.key === 'ArrowRight') onNext()
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [onClose, onPrev, onNext])
+
+  return (
+    <div className="lightbox-overlay" onClick={onClose}>
+      <img
+        src={images[index]}
+        alt=""
+        className="lightbox-img"
+        onClick={(e) => e.stopPropagation()}
+      />
+      <button className="lightbox-close" onClick={onClose} aria-label="Close">
+        <i className="fa-solid fa-xmark" />
+      </button>
+      {images.length > 1 && (
+        <button className="lightbox-arrow lightbox-prev" onClick={(e) => { e.stopPropagation(); onPrev() }} aria-label="Previous">
+          <i className="fa-solid fa-chevron-left" />
+        </button>
+      )}
+      {images.length > 1 && (
+        <button className="lightbox-arrow lightbox-next" onClick={(e) => { e.stopPropagation(); onNext() }} aria-label="Next">
+          <i className="fa-solid fa-chevron-right" />
+        </button>
+      )}
+      {images.length > 1 && (
+        <span className="lightbox-counter">{index + 1} / {images.length}</span>
+      )}
+    </div>
+  )
+}
+
+function ExperiencePost({ experience, index }) {
+  const [ref, inView] = useInView(0.1)
+
+  return (
+    <article
+      className={`exp-post${inView ? ' visible' : ''}`}
+      ref={ref}
+      style={{ transitionDelay: `${index * 120}ms` }}
+    >
+      <div className="exp-post-icon-wrap">
+        <i className={`exp-post-icon ${experience.icon}`} />
+      </div>
+      <div className="exp-post-body">
+        <h3 className="exp-post-title">
+          {experience.link ? (
+            <a href={experience.link} target="_blank" rel="noopener noreferrer">{experience.title}</a>
+          ) : experience.title}
+        </h3>
+        <p className="exp-post-subtitle">{experience.subtitle}</p>
+        <p className="exp-post-desc">{experience.description}</p>
+        {experience.images.length > 0 && (
+          <div className={`exp-post-gallery count-${Math.min(experience.images.length, 3)}`}>
+            {experience.images.slice(0, 3).map((img, i) => (
+              <div key={i} className="exp-post-thumb">
+                <img src={img} alt={`${experience.title} ${i + 1}`} />
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    </article>
+  )
+}
+
+function Experiences() {
+  const [ref, inView] = useInView()
+
+  return (
+    <section id="experiences" className="section experiences" ref={ref}>
+      <div className={`section-inner${inView ? ' visible' : ''}`}>
+        <span className="section-number">04.</span>
+        <h2 className="section-title">Experiences</h2>
+        <div className="section-divider" />
+        <div className="exp-posts">
+          {EXPERIENCES.map((exp, i) => (
+            <ExperiencePost key={exp.title} experience={exp} index={i} />
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
 function Contact() {
   const [ref, inView] = useInView()
 
   return (
     <section id="contact" className="section contact" ref={ref}>
       <div className={`section-inner contact-inner${inView ? ' visible' : ''}`}>
-        <span className="section-number">04.</span>
+        <span className="section-number">05.</span>
         <h2 className="contact-heading">Get In Touch</h2>
         <p className="contact-text">
           I'm currently looking for new opportunities and my inbox is always open.
@@ -363,6 +527,7 @@ export default function App() {
         <About />
         <Skills />
         <Projects />
+        <Experiences />
         <Contact />
       </main>
       <Footer />
