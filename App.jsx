@@ -4,6 +4,7 @@ import './site.css'
 import '@fortawesome/fontawesome-free/css/all.min.css'
 
 import imgHamed from './Hamed_President.jpg'
+import resumePdf from './assets/Resume/Hamed Adam.pdf'
 
 import imgLRS1 from './assets/Pictures/LRS/intro event.JPG'
 import imgLRS2 from './assets/Pictures/LRS/LRS 3.JPG'
@@ -27,7 +28,6 @@ import imgHack5 from './assets/Pictures/LEFS Hackathon/Hackathon 5.png'
 import imgHack6 from './assets/Pictures/LEFS Hackathon/Hackathon 6.png'
 import imgHack7 from './assets/Pictures/LEFS Hackathon/Hackathon 7.png'
 import imgHack8 from './assets/Pictures/LEFS Hackathon/Hackathon 8.jpg'
-
 import imgRSS7 from './assets/RSS Hackathon/RSS 7.jpg'
 
 const NAV_LINKS = [
@@ -44,7 +44,7 @@ const EXPERIENCES = [
     {
     title: 'RSS Hackathon',
     subtitle: 'Royal Statistical Society Hackathon',
-    description: 'Won second place in the RSS Hackathon where  applying data science and statistical methods to solve real-world analytical challenges.',
+    description: 'Won second place in the RSS Hackathon where I applied statistical methods to analyze large data sets.',
     images: [imgRSS7],
     icon: 'fa-solid fa-chart-column',
   },
@@ -52,7 +52,7 @@ const EXPERIENCES = [
   {
     title: 'LRS',
     subtitle: 'Lancaster Rocketry Society',
-    description: 'Led the rocketry society as President — organising launches, intro events, and workshops to inspire students in aerospace engineering.',
+    description: 'Co-founded The lancaster rocketry society. As the president i organising launches, intro events, secured funding and affliated the society with the engineering department.',
     images: [imgLRS1, imgLRS2, imgLRS3, imgLRS4, imgLRS5, imgLRS6, imgLRS7, imgLRS8],
     link: 'https://lancaster-rocketry-society.github.io/Website/',
     icon: 'fa-solid fa-rocket',
@@ -68,26 +68,23 @@ const EXPERIENCES = [
   {
     title: 'TEDx',
     subtitle: 'TEDx Lancaster University',
-    description: 'organised the TEDx Lancaster University , bringing thought-provoking speakers from around the uk and diverse speakers to the university community.',
+    description: 'Coordinated the TEDx Lancaster Talk , bringing thought-provoking speakers from around the uk.',
     images: [imgTEDX1, imgTEDX2, imgTEDX3, imgTEDX4, imgTEDX5],
     icon: 'fa-solid fa-microphone-lines',
   },
-
-
 ]
 
 const SKILLS = [
-  { category: 'Languages', items: ['Python', 'JavaScript', 'TypeScript', 'C++', 'Java'] },
-  { category: 'Web & Frameworks', items: ['React', 'Node.js', 'Express', 'HTML/CSS', 'Vite'] },
+  { category: 'Languages', items: ['Python', 'JavaScript', 'C', 'C++', ' SQL'] },
+  { category: 'Web & Frameworks', items: ['React', 'SolidWorks', 'Express', 'CAD SolidWorks', 'Vite'] },
   { category: 'Tools & Platforms', items: ['Git', 'GitHub', 'Firebase', 'Linux', 'Docker'] },
-  { category: 'Interests', items: ['Aerospace Engineering', 'Embedded Systems', 'Robotics', 'AI/ML'] },
+  { category: 'Relevant Modules', items: ['Quantum mechanics', 'Linear Algebra', 'Computational modelling', 'Real Analysis'] },
 ]
 
 const PROJECTS = [
   {
     title: 'Lancaster Rocketry Society',
     description: 'Designed and built the official website for LRS — a student-led rocketry society. Features event management, team showcase, and a responsive retro space-age design.',
-    tech: ['React', 'Vite', 'Firebase', 'CSS'],
     link: 'https://lancaster-rocketry-society.github.io/Website/',
     icon: 'fa-solid fa-rocket',
   },
@@ -95,7 +92,6 @@ const PROJECTS = [
     {
     title: 'N Body simulation',
     description: 'Designed and built the official website for LRS — a student-led rocketry society. Features event management, team showcase, and a responsive retro space-age design.',
-    tech: ['React', 'Vite', 'Firebase', 'CSS'],
     link: 'https://github.com/Phys-Hamed-Adam/Solar-System',
     icon: 'fa-solid fa-rocket',
   },
@@ -103,15 +99,14 @@ const PROJECTS = [
 
   {
     title: 'Picky',
-    description: 'Collaborated on Picky — an app-based project tackling real-world problems through creative software solutions and user-centred design.',
-    tech: ['React', 'Node.js', 'CSS'],
+    description: 'Co-Founded my startup Picky Eater an app-based project tackling real-world problems through creative software solutions and user-centred design.',
     link: 'https://picky-eater-beta.vercel.app/',
     icon: 'fa-solid fa-mobile-screen-button',
   },
 ]
 
 const SOCIALS = [
-  { icon: 'fab fa-github', href: 'https://github.com/hamedadam', label: 'GitHub' },
+  { icon: 'fab fa-github', href: 'https://github.com/Phys-Hamed-Adam', label: 'GitHub' },
   { icon: 'fab fa-linkedin-in', href: 'https://www.linkedin.com/in/hamed-adam-66b774331/', label: 'LinkedIn' },
   { icon: 'fas fa-envelope', href: 'phys.hamed.adam@gmail.com', label: 'Email' },
 ]
@@ -200,7 +195,7 @@ function Nav() {
           ))}
           <li>
             <a
-              href="/resume.pdf"
+              href={resumePdf}
               target="_blank"
               rel="noopener noreferrer"
               className="nav-resume-btn"
@@ -260,7 +255,7 @@ function About() {
           <div className="about-text">
             <p>
               Hello! I'm Hamed, a physics student at Lancaster University
-              with a deep passion for building software and hardware that makes a difference.
+              with a deep passion for research and engineering. 
               I enjoy working at the intersection of technology and engineering — whether
               that's crafting web applications, programming flight computers, or leading a team
               of aspiring rocket engineers.
