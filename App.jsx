@@ -93,16 +93,23 @@ const PROJECTS = [
     title: 'N Body simulation',
     description: 'Designed and built the official website for LRS — a student-led rocketry society. Features event management, team showcase, and a responsive retro space-age design.',
     link: 'https://github.com/Phys-Hamed-Adam/Solar-System',
-    icon: 'fa-solid fa-rocket',
+    icon: 'fa-solid fa-earth-americas',
   },
 
-
   {
-    title: 'Picky',
+    title: 'Picky Eater',
     description: 'Co-Founded my startup Picky Eater an app-based project tackling real-world problems through creative software solutions and user-centred design.',
     link: 'https://picky-eater-beta.vercel.app/',
     icon: 'fa-solid fa-mobile-screen-button',
   },
+
+    {
+    title: 'Qaunt Modelling Website',
+    description: 'Built an engine for quantitave simulations that allows users to build adequate trading strategies.',
+    link: 'https://github.com/Phys-Hamed-Adam/Quant-modelling',
+    icon: 'fa-solid fa-coins',
+  },
+
 ]
 
 const SOCIALS = [
@@ -328,11 +335,13 @@ function ProjectCard({ project, index }) {
       </div>
       <h3 className="project-card-title">{project.title}</h3>
       <p className="project-card-desc">{project.description}</p>
-      <ul className="project-card-tech">
-        {project.tech.map(t => (
-          <li key={t}>{t}</li>
-        ))}
-      </ul>
+      {project.tech && (
+        <ul className="project-card-tech">
+          {project.tech.map(t => (
+            <li key={t}>{t}</li>
+          ))}
+        </ul>
+      )}
     </div>
   )
 }
